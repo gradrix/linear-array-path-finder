@@ -38,7 +38,7 @@ namespace ArrayPathFinderConsole
 
                 if (line == "h")
                 {
-                    LinearArrayPathFInderWebApi.Program.Main(null);
+                    LinearArrayPathFinderWebApi.Program.Main(null);
                     continue;
                 }
 

@@ -3,7 +3,7 @@ using LinearArrayPathFinder;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 
-namespace LinearArrayPathFInderWebApi.Controllers
+namespace LinearArrayPathFinderWebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]

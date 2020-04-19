@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SavedResultManager;
 
-namespace LinearArrayPathFInderWebApi
+namespace LinearArrayPathFinderWebApi
 {
     public class Startup
     {

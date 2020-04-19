@@ -18,7 +18,7 @@ namespace LinearArrayPathFinder
         public int Count => _pathDict.Count;
 
         /// <summary>
-        /// Uses the point of the path and determines by its value new diverging paths from that point and returns them
+        /// Uses the point of the path and determines new diverging paths from this point by its value.
         /// </summary>
         /// <param name="index">Index of the point to in the path begin from</param>
         /// <returns>If the point still can be used -> gets its value and finds next point indexes of the path. If not -> returns empty int list</returns>

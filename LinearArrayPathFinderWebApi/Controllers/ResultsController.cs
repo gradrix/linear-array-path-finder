@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Models;
 using SavedResultManager;
 
-namespace LinearArrayPathFInderWebApi.Controllers
+namespace LinearArrayPathFinderWebApi.Controllers
 {
     [ApiController]
     public class ResultsController: ControllerBase

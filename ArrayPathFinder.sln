@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinearArrayPathFinderTests"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayPathFinderConsole", "ArrayPathFinderConsole\ArrayPathFinderConsole.csproj", "{DCC1004B-E7F7-4990-899B-906237FA2FC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearArrayPathFInderWebApi", "LinearArrayPathFInderWebApi\LinearArrayPathFInderWebApi.csproj", "{9B539EFE-D203-4145-A77C-714D7BA4C7EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearArrayPathFinderWebApi", "LinearArrayPathFinderWebApi\LinearArrayPathFinderWebApi.csproj", "{9B539EFE-D203-4145-A77C-714D7BA4C7EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavedResultManager", "SavedResultManager\SavedResultManager.csproj", "{B418A191-D292-44EF-A7CC-981AFAC54E8F}"
 EndProject
