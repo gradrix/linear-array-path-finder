@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 namespace LinearArrayPathFinder
 {
@@ -38,12 +37,6 @@ namespace LinearArrayPathFinder
                 }
             }
             return nextIndexes;
-        }
-
-        public override string ToString()
-        {
-            var array = _pathDict.ToArray();
-            return $"Path: {string.Join(", ", _pathDict.Values)}";
         }
     }
 }

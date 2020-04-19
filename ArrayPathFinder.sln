@@ -3,11 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayPathFinder", "ArrayPathFinder\ArrayPathFinder.csproj", "{13E4EEEC-370A-4E69-AB7E-D7A2C2783059}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinearArrayPathFinder", "LinearArrayPathFinder\LinearArrayPathFinder.csproj", "{D0AC78FF-B569-4301-802A-E7856D965CDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearArrayPathFinder", "LinearArrayPathFinder\LinearArrayPathFinder.csproj", "{D0AC78FF-B569-4301-802A-E7856D965CDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinearArrayPathFinderTests", "LinearArrayPathFinderTests\LinearArrayPathFinderTests.csproj", "{5D3647E7-ADCF-48DC-9CFB-6B96890D87CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearArrayPathFinderTests", "LinearArrayPathFinderTests\LinearArrayPathFinderTests.csproj", "{5D3647E7-ADCF-48DC-9CFB-6B96890D87CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayPathFinderConsole", "ArrayPathFinderConsole\ArrayPathFinderConsole.csproj", "{DCC1004B-E7F7-4990-899B-906237FA2FC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearArrayPathFInderWebApi", "LinearArrayPathFInderWebApi\LinearArrayPathFInderWebApi.csproj", "{9B539EFE-D203-4145-A77C-714D7BA4C7EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavedResultManager", "SavedResultManager\SavedResultManager.csproj", "{B418A191-D292-44EF-A7CC-981AFAC54E8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{1AAD2EA3-3451-4C80-86C4-314C6814B4D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{47008F2B-F7C1-4AC3-9B8A-61D001CE3C81}"
+	ProjectSection(SolutionItems) = preProject
+		PostmanPathFinder.postman_collection.json = PostmanPathFinder.postman_collection.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +26,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{13E4EEEC-370A-4E69-AB7E-D7A2C2783059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13E4EEEC-370A-4E69-AB7E-D7A2C2783059}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13E4EEEC-370A-4E69-AB7E-D7A2C2783059}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13E4EEEC-370A-4E69-AB7E-D7A2C2783059}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D0AC78FF-B569-4301-802A-E7856D965CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D0AC78FF-B569-4301-802A-E7856D965CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0AC78FF-B569-4301-802A-E7856D965CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +34,22 @@ Global
 		{5D3647E7-ADCF-48DC-9CFB-6B96890D87CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D3647E7-ADCF-48DC-9CFB-6B96890D87CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D3647E7-ADCF-48DC-9CFB-6B96890D87CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC1004B-E7F7-4990-899B-906237FA2FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC1004B-E7F7-4990-899B-906237FA2FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC1004B-E7F7-4990-899B-906237FA2FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC1004B-E7F7-4990-899B-906237FA2FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B539EFE-D203-4145-A77C-714D7BA4C7EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B539EFE-D203-4145-A77C-714D7BA4C7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B539EFE-D203-4145-A77C-714D7BA4C7EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B539EFE-D203-4145-A77C-714D7BA4C7EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B418A191-D292-44EF-A7CC-981AFAC54E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B418A191-D292-44EF-A7CC-981AFAC54E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B418A191-D292-44EF-A7CC-981AFAC54E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B418A191-D292-44EF-A7CC-981AFAC54E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AAD2EA3-3451-4C80-86C4-314C6814B4D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AAD2EA3-3451-4C80-86C4-314C6814B4D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AAD2EA3-3451-4C80-86C4-314C6814B4D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AAD2EA3-3451-4C80-86C4-314C6814B4D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

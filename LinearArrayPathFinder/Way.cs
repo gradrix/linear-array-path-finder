@@ -39,9 +39,9 @@ namespace LinearArrayPathFinder
         /// </summary>
         public bool EndWasReached => _currentPath.Max() == _availablePath.Count - 1;
 
-        public override string ToString()
+        public string ToResult()
         {
-            return $"Path taken: {string.Join(", ", _currentPath)}";
+            return string.Join(", ", _currentPath);
         }
     }
 }

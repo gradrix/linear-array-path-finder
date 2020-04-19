@@ -1,5 +1,7 @@
 using LinearArrayPathFinder;
+using NSubstitute;
 using NUnit.Framework;
+using SavedResultManager;
 
 namespace LinearArrayPathFinderTests
 {
@@ -10,7 +12,8 @@ namespace LinearArrayPathFinderTests
         [SetUp]
         public void Setup()
         {
-            _pathFinder = new PathFinder();
+            var resultManagerMock = Substitute.For<IResultManager>();
+            _pathFinder = new PathFinder(resultManagerMock);
         }
 
         //Valid Routes
@@ -27,8 +30,8 @@ namespace LinearArrayPathFinderTests
         [TestCase(new[] { 1, 6, -1, 0, 2, 0, 0, 0, 2 }, false)]
         public void PathTests(int[] input, bool expectedResult)
         {
-            var result = _pathFinder.Find(input);
-            Assert.AreEqual(expectedResult, result);
+            var result = _pathFinder.FindAndSaveSingle(input);
+            Assert.AreEqual(expectedResult, result.HasValidPath);
         }
     }
 }

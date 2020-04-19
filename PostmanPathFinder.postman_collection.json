@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "6d8fbdc7-ed9c-4d72-a67f-6aee8e875b4b",
+		"name": "PathFinder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindPath",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[1,2,0,3,0,2,0]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/FindPath/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"FindPath",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BulkFindPath",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[[1,2,0,3,0,2,0],[1,2,0,2,0,2,0],[1,2,0,1,0,-1]]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/BulkFindPath",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BulkFindPath"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetResults",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/GetResults/All",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"GetResults",
+						"All"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetResults by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/GetResults/ById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"GetResults",
+						"ById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetResults by Input",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/GetResults/ByInput/1,2,0,3,0,2,0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"GetResults",
+						"ByInput",
+						"1,2,0,3,0,2,0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
