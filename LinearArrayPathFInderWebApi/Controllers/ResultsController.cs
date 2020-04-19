@@ -21,7 +21,7 @@ namespace LinearArrayPathFInderWebApi.Controllers
         public List<PathFinderResult> GetAll()
         {
             var result = _resultManager.GetAllResults();
-            return result;
+            return result.Count == 0 ? null : result;
         }
 
         [Route("GetResults/ById/{id}")]

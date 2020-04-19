@@ -44,11 +44,15 @@ namespace ArrayPathFinderConsole
 
                 if (line == "l")
                 {
-                    Console.WriteLine($"Saved results:");
-                    foreach (var result in resultManager.GetAllResults())
+                    var results = resultManager.GetAllResults();
+                    Console.WriteLine(results.Count == 0
+                        ? "Not a single result exists in table yet..\n"
+                        : "Saved results:");
+                    foreach (var result in results)
                     {
                         result.ConsolePrint();
                     }
+
                     continue;
                 }
 
